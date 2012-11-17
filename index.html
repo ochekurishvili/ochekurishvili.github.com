@@ -6,13 +6,15 @@
         <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic" rel="stylesheet" type="text/css">
         <style type="text/css">
             body { margin: 0; padding: 10% 0 0 0; border-top: 10px solid #333; font-family: "Ubuntu", sans-serif; text-align: center; cursor: default }
+            a, abbr { color: #C00000; border-bottom: 1px dotted #DCDCDC; padding-bottom: 2px; text-decoration: none }
+            a:hover, abbr:hover { border-bottom-color: #C0C0C0 }
             h1 { font-weight: normal; color: #C0C0C0; font-size: 220%; margin-bottom: .5em }
             h1 span { font-weight: normal; color: #333; font-size: 120% }
             h2 { font-weight: normal; margin-top: 0 }
             h2 span { color: #C0C0C0 }
-            h3 { font-weight: normal; color: #C00000; font-style: italic; font-size: 100%; margin-top: 10em }
-            abbr { border-bottom: 1px dotted #DCDCDC; padding-bottom: 2px; cursor: help }
-            abbr:hover { border-bottom-color: #C0C0C0 }
+            h3 { font-weight: normal; font-size: 100%; margin-top: 5em }
+            h4 { font-weight: normal; color: #C00000; font-style: italic; font-size: 100%; margin-top: 10em }
+            abbr { cursor: help }
         </style>
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -42,7 +44,16 @@
 
         <h2><span>Phone:</span> +995-574-885-116</h2>
 
-        <h3><abbr onmouseover="mixpanel.track('Quote hovered');" title="&quot;I will either find a way, or make one.&quot; - Latin proverb, most commonly attributed to Hannibal in response to his generals who had declared it impossible to cross the Alps with elephants.">Aut inveniam viam aut faciam.</abbr></h3>
+        <h3>
+            Find Me On: 
+            <a href="http://www.linkedin.com/in/ochekurishvili" title="LinkedIn" onclick="mixpanel.track('Navigated to LinkedIn');">LinkedIn</a> &middot;
+            <a href="http://twitter.com/ochekurishvili" title="Twitter" onclick="mixpanel.track('Navigated to Twitter');">Twitter</a> &middot;
+            <a href="https://plus.google.com/101850652879363403683" title="Google+" onclick="mixpanel.track('Navigated to Google+');">Google+</a> &middot;
+            <a href="https://github.com/ochekurishvili" title="GitHub" onclick="mixpanel.track('Navigated to GitHub');">GitHub</a> &middot;
+            <a href="http://www.last.fm/user/ochekurishvili" title="Last.fm" onclick="mixpanel.track('Navigated to Last.fm');">Last.fm</a>
+        </h3>
 
+        <h4><abbr onmouseover="mixpanel.track('Quote hovered');" title="&quot;I will either find a way, or make one.&quot; - Latin proverb, most commonly attributed to Hannibal in response to his generals who had declared it impossible to cross the Alps with elephants.">Aut inveniam viam aut faciam.</abbr></h4>
+		
     </body>
 </html>
