@@ -29,13 +29,6 @@
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(ga, s);
             })();
-            (function(c,a)
-            {
-                var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=
-                        a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1;window.mixpanel=a
-            })(document, window.mixpanel || []);
-            mixpanel.init('e9782d95316f0412f2303984b6c77aa6');
-            mixpanel.track('Landing page loaded');
         </script>
     </head>
     <body>
@@ -46,14 +39,14 @@
 
         <h3>
             Find Me On: 
-            <a href="http://www.linkedin.com/in/ochekurishvili" title="LinkedIn" onclick="mixpanel.track('Navigated to LinkedIn');">LinkedIn</a> &middot;
-            <a href="http://twitter.com/ochekurishvili" title="Twitter" onclick="mixpanel.track('Navigated to Twitter');">Twitter</a> &middot;
-            <a href="https://plus.google.com/101850652879363403683" title="Google+" onclick="mixpanel.track('Navigated to Google+');">Google+</a> &middot;
-            <a href="https://github.com/ochekurishvili" title="GitHub" onclick="mixpanel.track('Navigated to GitHub');">GitHub</a> &middot;
-            <a href="http://www.last.fm/user/ochekurishvili" title="Last.fm" onclick="mixpanel.track('Navigated to Last.fm');">Last.fm</a>
+            <a href="http://www.linkedin.com/in/ochekurishvili" title="LinkedIn" onclick="_gaq.push(['_trackEvent', 'Social Follow Up', 'LinkedIn']);">LinkedIn</a> &middot;
+            <a href="http://twitter.com/ochekurishvili" title="Twitter" onclick="_gaq.push(['_trackEvent', 'Social Follow Up', 'Twitter']);">Twitter</a> &middot;
+            <a href="https://plus.google.com/101850652879363403683" title="Google+" onclick="_gaq.push(['_trackEvent', 'Social Follow Up', 'Google+']);">Google+</a> &middot;
+            <a href="https://github.com/ochekurishvili" title="GitHub" onclick="_gaq.push(['_trackEvent', 'Social Follow Up', 'GitHub']);">GitHub</a> &middot;
+            <a href="http://www.last.fm/user/ochekurishvili" title="Last.fm" onclick="_gaq.push(['_trackEvent', 'Social Follow Up', 'Last.fm']);">Last.fm</a>
         </h3>
 
-        <h4><abbr onmouseover="mixpanel.track('Quote hovered');" title="&quot;I will either find a way, or make one.&quot; - Latin proverb, most commonly attributed to Hannibal in response to his generals who had declared it impossible to cross the Alps with elephants.">Aut inveniam viam aut faciam.</abbr></h4>
+        <h4><abbr onmouseover="_gaq.push(['_trackEvent', 'Quote', 'Mouse Hovered']);" title="&quot;I will either find a way, or make one.&quot; - Latin proverb, most commonly attributed to Hannibal in response to his generals who had declared it impossible to cross the Alps with elephants.">Aut inveniam viam aut faciam.</abbr></h4>
 		
     </body>
 </html>
