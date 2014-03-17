@@ -8,7 +8,9 @@
             body { margin: 0; padding: 10% 0 0 0; border-top: 5px solid #333; font-family: "Ubuntu", sans-serif; text-align: center; cursor: default }
             a, abbr { color: #C00000; border-bottom: 1px dotted #DCDCDC; padding-bottom: 2px; text-decoration: none }
             a:hover, abbr:hover { border-bottom-color: #C0C0C0 }
-            h1 { font-weight: normal; color: #C0C0C0; font-size: 220%; margin-bottom: .5em }
+            #avatar { display: inline-block; width: 120px; height: 120px; border-radius: 100%; overflow: hidden; border: 3px solid #FFF; background-color: #FFF; box-shadow: 0 1px 1px rgba(0, 0, 0, .3) }
+            #avatar img { display: block; width: 100%; height: 100%; border-radius: 100% }
+            h1 { font-weight: normal; color: #C0C0C0; font-size: 220%; margin-top: 0; margin-bottom: .5em }
             h1 span { font-weight: normal; color: #333; font-size: 120% }
             h2 { font-weight: normal; margin-top: 0 }
             h2 span { color: #C0C0C0 }
@@ -32,6 +34,10 @@
         </script>
     </head>
     <body>
+
+        <div class="avatar">
+            <img src="https://secure.gravatar.com/avatar/978b115b0a456b26235e16b1e8a58b00?size=120px" width="120" height="120" title="Otar Chekurishvili" />
+        </div>
 
         <h1><span>otar</span>@<span>chekurishvili</span>.com</h1>
 
